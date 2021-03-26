@@ -1,0 +1,111 @@
+
+/*declarar a cor como variavel, assim fica melhor para usa-la no código*/
+:root{
+    --vermelho:#E50914;/*variaveis declaradas */
+    --preto:#141414;   
+}
+
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*não rompe a saída da caixa*/
+}
+/*elementos base */
+body{
+    background: var(--preto);
+    font-family: 'Arial', Times, serif;
+    color: white;
+    
+}
+
+header .container{
+    display: flex; /*utiliza flex box, alinha elementos na tela*/
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{ /*quando o maouse está em cima da palavra, muda a cor*/
+    color: #fff
+}
+
+/*filme principal*/
+.filme-principal{    
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/stranger-things.jpg');
+
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+
+}
+
+.titulo{
+    font-size: 40px;
+    font-family: 'trebuchet MS', Arial, Helvetica, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border:none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    transition: .3s ease all;
+
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container {
+    margin-right: 20px;
+
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+}
